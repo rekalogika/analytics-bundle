@@ -11,7 +11,7 @@ declare(strict_types=1);
  * that was distributed with this source code.
  */
 
-namespace Rekalogika\Analytics\Bundle\UI\Implementation;
+namespace Rekalogika\Analytics\Bundle\UI\Html\Internal;
 
 use Rekalogika\Analytics\PivotTable\Model\Label;
 use Rekalogika\Analytics\PivotTable\Model\Member;

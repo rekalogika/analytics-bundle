@@ -11,9 +11,9 @@ declare(strict_types=1);
  * that was distributed with this source code.
  */
 
-namespace Rekalogika\Analytics\Bundle\UI;
+namespace Rekalogika\Analytics\Bundle\UI\Html;
 
-use Rekalogika\Analytics\Bundle\UI\Implementation\HtmlRendererVisitor;
+use Rekalogika\Analytics\Bundle\UI\Html\Internal\HtmlRendererVisitor;
 use Rekalogika\Analytics\Contracts\Result\Result;
 use Rekalogika\Analytics\PivotTable\Adapter\PivotTableAdapter;
 use Rekalogika\PivotTable\PivotTableTransformer;

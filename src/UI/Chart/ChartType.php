@@ -11,8 +11,15 @@ declare(strict_types=1);
  * that was distributed with this source code.
  */
 
-namespace Rekalogika\Analytics\Bundle\Chart;
+namespace Rekalogika\Analytics\Bundle\UI\Chart;
 
-use Rekalogika\Analytics\Common\Exception\RuntimeException;
-
-final class UnsupportedData extends RuntimeException {}
+enum ChartType
+{
+    case Auto;
+    case Bar;
+    case Line;
+    case StackedBar;
+    case GroupedBar;
+    case Pie;
+    case None;
+}

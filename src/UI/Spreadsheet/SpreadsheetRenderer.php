@@ -11,24 +11,24 @@ declare(strict_types=1);
  * that was distributed with this source code.
  */
 
-namespace Rekalogika\Analytics\Bundle\UI;
+namespace Rekalogika\Analytics\Bundle\UI\Spreadsheet;
 
 use PhpOffice\PhpSpreadsheet\Reader\Html;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use Rekalogika\Analytics\Bundle\Formatter\Cellifier;
-use Rekalogika\Analytics\Bundle\UI\Implementation\SpreadSheetRendererVisitor;
+use Rekalogika\Analytics\Bundle\UI\Spreadsheet\Internal\SpreadsheetRendererVisitor;
 use Rekalogika\Analytics\Contracts\Result\Result;
 use Rekalogika\Analytics\PivotTable\Adapter\PivotTableAdapter;
 use Rekalogika\PivotTable\PivotTableTransformer;
 
 final readonly class SpreadsheetRenderer
 {
-    private SpreadSheetRendererVisitor $visitor;
+    private SpreadsheetRendererVisitor $visitor;
 
     public function __construct(
         Cellifier $cellifier,
     ) {
-        $this->visitor = new SpreadSheetRendererVisitor($cellifier);
+        $this->visitor = new SpreadsheetRendererVisitor($cellifier);
     }
 
     /**

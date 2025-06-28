@@ -11,13 +11,13 @@ declare(strict_types=1);
  * that was distributed with this source code.
  */
 
-namespace Rekalogika\Analytics\Bundle\Chart\Implementation;
+namespace Rekalogika\Analytics\Bundle\UI\Chart\Implementation;
 
-use Rekalogika\Analytics\Bundle\Chart\AnalyticsChartBuilder;
-use Rekalogika\Analytics\Bundle\Chart\ChartType;
-use Rekalogika\Analytics\Bundle\Chart\UnsupportedData;
 use Rekalogika\Analytics\Bundle\Formatter\Numberifier;
 use Rekalogika\Analytics\Bundle\Formatter\Stringifier;
+use Rekalogika\Analytics\Bundle\UI\Chart\AnalyticsChartBuilder;
+use Rekalogika\Analytics\Bundle\UI\Chart\ChartType;
+use Rekalogika\Analytics\Bundle\UI\Chart\UnsupportedData;
 use Rekalogika\Analytics\Common\Exception\EmptyResultException;
 use Rekalogika\Analytics\Common\Exception\UnexpectedValueException;
 use Rekalogika\Analytics\Contracts\Model\SequenceMember;

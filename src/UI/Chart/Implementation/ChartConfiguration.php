@@ -11,7 +11,7 @@ declare(strict_types=1);
  * that was distributed with this source code.
  */
 
-namespace Rekalogika\Analytics\Bundle\Chart\Implementation;
+namespace Rekalogika\Analytics\Bundle\UI\Chart\Implementation;
 
 final readonly class ChartConfiguration
 {

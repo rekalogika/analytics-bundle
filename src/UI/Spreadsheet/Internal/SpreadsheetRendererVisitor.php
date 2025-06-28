@@ -11,7 +11,7 @@ declare(strict_types=1);
  * that was distributed with this source code.
  */
 
-namespace Rekalogika\Analytics\Bundle\UI\Implementation;
+namespace Rekalogika\Analytics\Bundle\UI\Spreadsheet\Internal;
 
 use Rekalogika\Analytics\Bundle\Formatter\Cellifier;
 use Rekalogika\Analytics\PivotTable\Model\Property;
@@ -30,7 +30,7 @@ use Rekalogika\PivotTable\Table\TableVisitor;
  * @internal
  * @implements TableVisitor<string>
  */
-final readonly class SpreadSheetRendererVisitor implements TableVisitor
+final readonly class SpreadsheetRendererVisitor implements TableVisitor
 {
     public function __construct(private Cellifier $cellifier) {}
 
